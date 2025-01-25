@@ -1,0 +1,37 @@
+base:
+  role: "validator"
+  data_dir: ".aptos/testnet"
+  api:
+    enabled: true
+    address: "127.0.0.1:8080"
+  metrics:
+    enabled: true
+    address: "127.0.0.1:9101"
+  faucet:
+    enabled: true
+    port: 8081
+    address: "127.0.0.1"
+execution:
+  genesis_file_location: ""
+full_node_networks:
+  - network_id: "public"
+    listen_address: "/ip4/127.0.0.1/tcp/6181"
+    seeds: {}
+storage:
+  backup_service_address: "127.0.0.1:6186"
+  storage_pruner_config:
+    ledger_pruner_config:
+      enable: true
+      prune_window: 100000
+    state_merkle_pruner_config:
+      enable: true
+      prune_window: 100000
+    epoch_snapshot_pruner_config:
+      enable: true
+      prune_window: 100000
+consensus:
+  safety_rules:
+    service:
+      type: "local"
+    backend:
+      type: "in_memory"
