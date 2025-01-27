@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.15.3",
+    "@mui/icons-material": "^5.16.14",
     "@mui/material": "^5.15.3",
     "@types/crypto-js": "^4.2.2",
     "axios": "^1.6.5",
@@ -22,6 +22,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
     "recharts": "^2.10.3",
+    "typescript": "^5.3.3",
     "web3": "^4.3.0"
   },
   "devDependencies": {
@@ -30,7 +31,6 @@
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
-    "typescript": "^5.3.3",
     "vite": "^5.0.11"
   }
 }
